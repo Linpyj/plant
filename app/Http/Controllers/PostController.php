@@ -13,4 +13,8 @@ class PostController extends Controller
     public function store() {
         echo('store');
     }
+
+    public function index() {
+        return view('line');
+    }
 }
