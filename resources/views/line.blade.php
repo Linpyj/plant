@@ -1,91 +1,47 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-10">
-        <div class="card">
-            <div class="mb-5" style="border: 1px solid black;">
-              <div class="bio_wrapper">
-                <p>こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。
-                こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。
-                こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。
-                こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。
-                こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。
-                こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。
-                こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。
-                </p>
-              </div>
-              <div style="display: flex;">
-                <div 
-                  class="number_wrapper"
-                  style="display:flex;
-                          width: 1500px;
-                          align-items: flex-end;
-                          "
-                >
-                  <div>
-                    <h5 class="ml-2">投稿</h5>
-                    <h5 class="ml-2">100</h5>
-                  </div>
-                  <div>
-                    <h5 class="ml-5">フォロー</h5>
-                    <h5 class="ml-5">1200</h5>
-                  </div>
-                  <div>
-                    <h5 class="ml-5">フォロワー</h5>
-                    <h5 class="ml-5">1000000</h5>
-                  </div>
-                  <div>
-                    <h5 class="ml-5">お気に入り</h5>
-                    <h5 class="ml-5">200</h5>
-                  </div>
-                </div>
-                <div class="bio_image" 
-                  style="text-align: right;
-                  margin-right: 80px; display: flex;">
-                  <img class='product_listing_img img-responsive' src="{{ asset('/assets/images/hiko.jpeg') }}" 
-                    style="max-width: 50%;
-                    ">
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              
-              <div class="row">
-                
-                <div class="col-md-6">  
-                  <h3>フォロー中</h3>
-                  <div class="card-columns">
-                    <div class="card">
-                        <img class='product_listing_img img-responsive' src="{{ asset('/assets/images/0819133200_5f3cab40c3500.jpeg') }}" style="max-width: 250%;">
-                    </div>
-                  </div>
-                  <div class="card-columns">
-                    <div class="card">
-                        <img class='product_listing_img img-responsive' src="{{ asset('/assets/images/0819133200_5f3cab40c3500.jpeg') }}" style="max-width: 250%;">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <h3>おすすめの投稿</h3>
-                  <div class="card-columns">
-                    <div class="card">
-                        <img class='product_listing_img img-responsive' src="{{ asset('/assets/images/0819133200_5f3cab40c3500.jpeg') }}" style="max-width: 250%;">
-                    </div>
-                  </div>
-                  <div class="card-columns">
-                    <div class="card">
-                        <img class='product_listing_img img-responsive' src="{{ asset('/assets/images/0819133200_5f3cab40c3500.jpeg') }}" style="max-width: 250%;">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
+<div class="container is-max-widescreen" style="width: 70%;">
+  
+  <div class="bio-wrapper">
+    <div class="img_wrapper" style="display:flex;">
+      <div style="background-image: url('https://i.ytimg.com/vi/FdkGy53wVZY/maxresdefault.jpg');
+        width:  100px;
+        height:  100px;
+        border-radius: 50%;
+        background-position: center;
+        ">
+      </div>
+      <div style="max-width: 80%;">
+        <p class="subtitle ml-5"><strong>トムさん</strong></p>
+        <p class="ml-5">
+          ネコでして、ジェリーというネズミとよく遊んでいます。
+          ネコでして、ジェリーというネズミとよく遊んでいます。
+          ネコでして、ジェリーというネズミとよく遊んでいます。
+        </p>
+      </div>
+    </div>
+    <div class="number_wrapper mt-5 mb-5" style="display:flex;">
+      <p class="mr-3"><strong>フォロー</strong></p>
+      <p class="mr-3">1000</p>
+      <p class="mr-3"><strong>フォロワー</strong></p>
+      <p class="mr-3">2000</p>
     </div>
   </div>
+
+  <div class="tabs is-medium">
+    <ul>
+      <li><a>自分の写真</a></li>
+      <li><a>お気に入り写真</a></li>
+      <li class="is-active"><a>フォロー</a></li>
+      <li><a>フォロワー</a></li>
+    </ul>
+  </div>
+<form-component />
+
+     
 </div>
+
+
 
 @endsection

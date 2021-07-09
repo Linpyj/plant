@@ -12,6 +12,7 @@ class PostController extends Controller
 
     public function store() {
         echo('store');
+        return response()->json(['apple' => 'red', 'peach' => 'pink']);
     }
 
     public function index() {

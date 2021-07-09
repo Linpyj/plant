@@ -18,4 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/line', 'postController@index')->name('post.index');
+Route::get('/line', 'PostController@index')->name('post.index');
+
+Route::middleware(['cors'])->group(function () {
+    Route::post('/line', 'PostController@store')->name('post.create');
+});

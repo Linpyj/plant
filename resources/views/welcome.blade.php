@@ -86,5 +86,10 @@
 
             </div>
         </div>
+        <div id="app">
+    <example-component></example-component>
+    <test />
+</div>
+<script src="/js/app.js"></script>
     </body>
 </html>
