@@ -9,6 +9,7 @@
 <script>
 import axios from 'axios'
     export default {
+      name: 'FormComponent',
       data() {
         return {
           message: '',
