@@ -2017,7 +2017,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
-                url = 'http://127.0.0.1:8000/line';
+                url = 'http://13.230.65.58/line';
                 params = {
                   text: this.message
                 };
@@ -3438,7 +3438,7 @@ var render = function() {
           }
         }
       },
-      [_vm._v("submit!")]
+      [_vm._v("submit!!!")]
     ),
     _vm._v("\n  " + _vm._s(_vm.result) + "\n")
   ])
@@ -16081,8 +16081,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/rinrin/Desktop/Workplace/plants/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/rinrin/Desktop/Workplace/plants/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /var/www/plant/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /var/www/plant/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
