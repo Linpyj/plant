@@ -30,7 +30,6 @@ import axios from 'axios'
 
           return await axios
             .post(url,
-              headers: { "Access-Control-Allow-Origin": "*" }, 
               params)
             .then(function(res) {
               return res.data
