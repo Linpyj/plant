@@ -23,7 +23,7 @@ import axios from 'axios'
           console.log(this.result)
         },
         send: async function() {
-          const url = 'http://127.0.0.1:8000/line'
+          const url = 'http://13.230.65.58/line'
           const params = {
             text: this.message
           }

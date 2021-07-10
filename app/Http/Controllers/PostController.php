@@ -10,8 +10,10 @@ class PostController extends Controller
         echo('create');
     }
 
-    public function store() {
+    public function store(Request $request) {
         echo('store');
+        dd($request);
+        echo($request->header('X-Payjp-Webhook-Token'));
         return response()->json(['apple' => 'red', 'peach' => 'pink']);
     }
 
