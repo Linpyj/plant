@@ -15,7 +15,7 @@ const { template } = require("lodash");
 <script>
 import axios from 'axios'
     export default {
-      name: 'LoginForm',
+      name: 'RegisterForm',
       data() {
         return {
           name: '',
@@ -31,7 +31,7 @@ import axios from 'axios'
         },
         send: async function() {
           // const url = 'http://13.230.65.58/line'
-          const url = 'http://127.0.0.1:8000/register'
+          const url = (process.env.MIX_APP_ENV == 'local') ? 'http://127.0.0.1:8000/register' : 'http://13.230.65.58/register'
           console.log(url)
 
           return await axios
