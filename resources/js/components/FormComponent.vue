@@ -2,7 +2,7 @@
   <div>
     <input v-model="message" type="text">
     <button @click="submit()">submit!!!</button>
-    {{ result }}
+    <div v-if="result">{{result}}</div>
   </div>
 </template>
 
@@ -20,10 +20,10 @@ import axios from 'axios'
         submit: async function() {
           const result = await this.send()
           this.result = result
-          console.log(this.result)
         },
         send: async function() {
-          const url = 'http://13.230.65.58/line'
+          // const url = 'http://13.230.65.58/line'
+          const url = 'http://127.0.0.1:8000/line'
           const params = {
             text: this.message
           }

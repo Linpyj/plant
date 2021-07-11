@@ -4,6 +4,7 @@
 <div class="container is-max-widescreen" style="width: 70%;">
     <img src="{{ asset('/assets/images/hiko.jpeg') }}">
     <p class="is-size-4">おすすめの写真</p>
+    {{ Auth::user() }}
 
     <div class="tile is-ancestor">
         <div class="tile is-parent">

@@ -11,9 +11,19 @@
 |
 */
 
+Route::get('/login', function () {
+    return view('auth.login');
+});
+
+Route::post('/login', 'LoginController@login')->name('login');
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 
@@ -23,3 +33,5 @@ Route::get('/line', 'PostController@index')->name('post.index');
 Route::middleware(['cors'])->group(function () {
     Route::post('/line', 'PostController@store')->name('post.create');
 });
+
+Route::get('/post/create', 'PostController@create')->name('post.create');
