@@ -15,7 +15,11 @@ Route::get('/login', function () {
     return view('auth.login');
 });
 
-Route::post('/login', 'LoginController@login')->name('login');
+Route::post('/login', 'Auth\LoginController@login')->name('login');
+Route::get('/register', function() {
+    return view('auth.register');
+});
+Route::post('/register', 'Auth\RegisterController@create')->name('register');
 
 Route::get('/', function () {
     return view('welcome');
@@ -25,7 +29,7 @@ Route::get('/', function () {
 //     return view('welcome');
 // });
 
-Auth::routes();
+// Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/line', 'PostController@index')->name('post.index');

@@ -2,7 +2,6 @@
   <div>
     <input v-model="message" type="text">
     <button @click="submit()">submit!!!</button>
-    <div v-if="result">{{result}}</div>
   </div>
 </template>
 

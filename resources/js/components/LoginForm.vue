@@ -36,7 +36,7 @@ import axios from 'axios'
           return await axios
             .post(url,params)
             .then(function(res) {
-              return res.data
+              return res
             })
             .catch(function(error) {
               console.log(error)

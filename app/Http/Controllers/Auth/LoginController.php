@@ -27,7 +27,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/line';
 
     /**
      * Create a new controller instance.
@@ -44,7 +44,8 @@ class LoginController extends Controller
 
         if (Auth::attempt($credentials)) {
             // 認証に成功した
-            return redirect('line');
+            return response()->json('Yayay');
+            // return redirect(env('MIX_APP_URL') . '/line');
         } else {
             return response()->json('認証失敗');
         }
